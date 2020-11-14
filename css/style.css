@@ -70,8 +70,12 @@
 
 
 /* ---------  INTEGRATION RESPONSIVE MOBILE: < 768px --------- */
-/* ---  BODY --- */
+
+
 body{
+    /* Comportement */
+	display:flex;
+	flex-direction:column;
     /* Dimension */
     min-height: 100vh;
     /* Background */
@@ -80,6 +84,10 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
 }
+.content{
+    flex-grow: 1;
+}
+
 /* ---  HEADER --- */
 header{
     /* Comportement */
@@ -92,7 +100,7 @@ header{
     /* Espacement */
     padding: 10px;
     /* Style */
-    background-color: rgba(67, 70, 78, 0.5);
+    background-color: rgba(48, 56, 65, 0.8);
     
 }
 header ul{
@@ -135,6 +143,43 @@ header h1{
     font-size: 15px;
 }
 
+/* ---  FOOTER --- */
+footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+footer ul{
+    /* Dimension */
+    width: 80%;
+    /* Espacement */
+    padding-left: 0px;
+    margin-bottom: 0px;
+    /* Style */
+    list-style: none;
+
+}
+footer ul li{
+    /* Comportement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Dimension */
+    width: 100%;
+    height: 45px;
+    /* Espacement */
+    /* Style */
+    background-color: rgba(35, 35, 35, 0.8);
+    border: solid 1px rgba(207, 207, 207, 0.3)
+}
+footer ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
 
 /* ------  INTEGRATION RESPONSIVE "TABLETTE" ou > 768px ------ */
 @media (min-width: 768px) {
