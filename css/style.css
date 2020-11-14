@@ -18,9 +18,7 @@
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 20px;
     font-style: normal;
-    margin-left: 20px;
 }
 
 .flaticon-more:before {
@@ -86,6 +84,8 @@ body{
 }
 .content{
     flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 /* ---  HEADER --- */
@@ -138,11 +138,15 @@ header h1{
     width: auto;;
 }
 /* Icons flaticons*/
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after,span.temp {
+header [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after,span.temp {
     /* Dimension */
     font-size: 15px;
+    padding:10px;
 }
-
+/* ---  CONTENT --- */
+.sidebarSocial{
+    display: none;
+}
 /* ---  FOOTER --- */
 footer{
     position: relative;
@@ -183,7 +187,37 @@ footer ul li a {
 
 /* ------  INTEGRATION RESPONSIVE "TABLETTE" ou > 768px ------ */
 @media (min-width: 768px) {
+.sidebarSocial{
+    /* Comportement */
+    display: block;
+    /* Style */
 }
+.sidebarSocial [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+    font-size: 18px;
+}
+.sidebarSocial ul{
+    /* Espacement */
+    padding: 0px;
+    margin: 0px;
+    /* Style */
+    list-style: none;
+    
+}
+.sidebarSocial ul li{
+    padding: 10px 0px;
+    width: 50px;
+    background-color: #2682C2;
+}
+.sidebarSocial ul li a{
+    width: 100%;
+    color: white;
+}
+.sidebarSocial ul li a i{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+}
+
 
 /* ------  INTEGRATION RESPONSIVE "DESKTOP" ou > 992px ------ */
 @media (min-width: 992px) {}
