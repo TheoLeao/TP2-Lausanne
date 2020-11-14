@@ -73,6 +73,7 @@
 /* ---  BODY --- */
 body{
     /* Dimension */
+    min-height: 100vh;
     /* Background */
     background-image: url("../img/background.jpg");
     background-size: cover;
@@ -91,7 +92,7 @@ header{
     /* Espacement */
     padding: 10px;
     /* Style */
-    background-color: #43464e;
+    background-color: rgba(67, 70, 78, 0.5);
     
 }
 header ul{
@@ -103,11 +104,23 @@ header ul{
     margin: 0;
     padding: 0;
     /* Style */
-    list-style: none;
-   
+    list-style: none; 
 }
+
 header ul li:nth-child(2){
     display: none;
+}
+header h1{
+    /* Comportement */
+    text-transform: uppercase;
+    /* Dimension */
+    font-size: 18px;
+    /* Espacement */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Style */
+    color: white;
+    
 }
 .logo{
     height: 25px
