@@ -1,5 +1,6 @@
-/* ------  FONTS ICON ------ */
+/* ---------  GENERAL --------- */
 
+/* ---  FONTS ICON --- */
 @font-face {
     font-family: "Flaticon";
     src: url("../fonts/Flaticon.eot");
@@ -62,8 +63,65 @@
     background-color: red;
 }
 
-/* ------  INTEGRATION RESPONSIVE MOBILE: < 768px ------ */
-/* Medium devices (tablets, 768px and up) */
+/* ---  GENERAL --- */
+.white{
+    color:white
+}
+
+
+/* ---------  INTEGRATION RESPONSIVE MOBILE: < 768px --------- */
+/* ---  BODY --- */
+body{
+    /* Dimension */
+    /* Background */
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+/* ---  HEADER --- */
+header{
+    /* Comportement */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Dimension */
+    width: 100%;
+    height: 50px;
+    /* Espacement */
+    padding: 10px;
+    /* Style */
+    background-color: #43464e;
+    
+}
+header ul{
+    /* Comportement */
+    display: flex;
+    /* Dimension */
+    height: auto;
+    /* Espacement */
+    margin: 0;
+    padding: 0;
+    /* Style */
+    list-style: none;
+   
+}
+header ul li:nth-child(2){
+    display: none;
+}
+.logo{
+    height: 25px
+}
+.logo img{
+    height: 100%;
+    width: auto;;
+}
+/* Icons flaticons*/
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after,span.temp {
+    /* Dimension */
+    font-size: 15px;
+}
+
 
 /* ------  INTEGRATION RESPONSIVE "TABLETTE" ou > 768px ------ */
 @media (min-width: 768px) {
