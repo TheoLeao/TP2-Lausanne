@@ -231,8 +231,23 @@ footer ul li a {
 }
 /* ------  INTEGRATION RESPONSIVE "DESKTOP" ou > 992px ------ */
 @media (min-width: 992px) {
+/* ---  Header --- */
+header ul li:nth-child(2){
+    display: block;
+    color:white;
+}
+header ul{
+    width: 180px;
+    justify-content: space-between;
+}
+header ul li:nth-child(2) span{
+    padding-left: 0px;
+}
+/* ---  Sidebar --- */
 .sidebarSocial ul li a{
+    /* Comportement */
     display: flex;
+    /* Style */
     text-decoration: none;
 }
 .sidebarSocial ul li:hover{
@@ -242,7 +257,9 @@ footer ul li a {
     background-color: #0e4872;
 }
 .sidebarSocial ul li:hover a span{
+    /* Comportement */
     display: block;
+    /* Espacement */
     margin:0 auto;
 }
 
