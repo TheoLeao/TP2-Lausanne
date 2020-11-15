@@ -187,6 +187,8 @@ footer ul li a {
 
 /* ------  INTEGRATION RESPONSIVE "TABLETTE" ou > 768px ------ */
 @media (min-width: 768px) {
+
+/* ---  Sidebar --- */
 .sidebarSocial{
     /* Comportement */
     display: block;
@@ -204,23 +206,47 @@ footer ul li a {
     
 }
 .sidebarSocial ul li{
+    /* Espacement */
     padding: 10px 0px;
+    /* Dimension */
     width: 50px;
+    /* Style */
     background-color: #2682C2;
 }
 .sidebarSocial ul li a{
+    /* Dimension */
     width: 100%;
+    /* Style */
     color: white;
 }
 .sidebarSocial ul li a i{
+    /* Comportement */
     display: flex;
     justify-content: center;
+    /* Dimension */
     width: 50px;
 }
-
-
+.sidebarSocial ul li a span{
+    display: none;
+}
 /* ------  INTEGRATION RESPONSIVE "DESKTOP" ou > 992px ------ */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+.sidebarSocial ul li a{
+    display: flex;
+    text-decoration: none;
+}
+.sidebarSocial ul li:hover{
+    /* Dimension */
+    width: 150px;
+    /* Style */
+    background-color: #0e4872;
+}
+.sidebarSocial ul li:hover a span{
+    display: block;
+    margin:0 auto;
+}
+
+}
 
 
 /* ------  INTEGRATION RESPONSIVE "LARGE DEKSTOP" ou > 1200px ------ */
