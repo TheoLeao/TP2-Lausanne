@@ -489,6 +489,9 @@ header ul li a:link, a:hover, a:hover, a:active, a:visited {
     text-decoration: none;
     color: white;
 }
+header ul li a:active i{
+    color: #0e4872;
+}
 
 header h1 {
     /* Comportement */
